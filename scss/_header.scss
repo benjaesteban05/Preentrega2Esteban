@@ -9,8 +9,7 @@ header{
     }
     @media (max-width: 600px){
         .fondoindex{
-            background-color: $primary-color;
-            background-image: none;
+            background-image: url(../img/fondonuevo.jpg);
         }
     }
     .navbar{

@@ -23,8 +23,7 @@ header .fondoindex {
 }
 @media (max-width: 600px) {
   header .fondoindex {
-    background-color: #F4F8E6;
-    background-image: none;
+    background-image: url(../img/fondonuevo.jpg);
   }
 }
 header .navbar {
@@ -69,8 +68,8 @@ main {
 main .separadorframe2 {
   background-color: #CED0C8;
   border-bottom: 50px solid #CED0C8;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 main .novedades-div {
   display: flex;
