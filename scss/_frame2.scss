@@ -1,0 +1,129 @@
+// frame 2//
+main{
+    grid-area: main;
+    .separadorframe2{
+        background-color: #CED0C8;
+        border-bottom: 50px solid #CED0C8;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .novedades-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -60px;
+        .novedades{
+            /* background-color: #D3DBD9; */
+            border-radius: 10px;
+            margin-top: 70px;
+            font-size: 40px;
+            font-weight: 600;
+            font-family: "Noto serif", serif;
+        }
+    }
+    section{
+        display: flex;
+        grid-template-rows: repeat(4, 600px);
+        grid-template-columns: repeat(4, 600px);
+        column-gap: -100px;
+        row-gap: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        div{
+            background-color: #D3DBD9;
+            width: 400px; 
+            height: 400px;
+            box-sizing: border-box; 
+            border-radius: 8px;
+            border: 5px solid #e3e4d5;
+            margin: 75px;
+            h5{
+                font-weight: 600;
+            }
+        } 
+    .precios{
+        display: flex;
+        background-color: #D3DBD9;
+        width: 200px; 
+        height: 100px;
+        box-sizing: border-box; 
+        border-radius: 8px;
+        border: 5px solid #e3e4d5;
+        margin-top: 35px;
+        justify-content: center;
+        margin-left: 100px;
+        font-size: 20px;
+        font-weight: 600;
+        align-items: center;
+        }
+        
+    .numero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 20px;
+        margin-top: -50px;
+        }
+    }
+    form{
+        background-color: #D3DBD9;
+        border-radius: 8px;
+        border: 5px solid #e3e4d5;
+    }
+    .inicioh4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        margin-top: 100px;
+        font-weight: 600;
+    }
+    .mb-3{
+        margin-top: 50px;
+    }
+    .cajaforminicio{
+        margin-top: 150px;
+        width: 500px;
+        height: 450px;
+    }
+    .cajaform{
+        margin-top: 150px;
+        width: 500px;
+        height: 750px;
+    }
+    .mensaje{
+        width: 467px;
+        border-radius: 7px;
+        border: none;
+        margin-bottom: 30px;
+    }
+    
+    .cajaformcontacto{
+        margin-top: 150px;
+        width: 500px;
+        height: 650px;
+    }
+    /* Guia de talles */
+    .guiadetalles{
+        @extend .inicioh4
+    }
+    .table{
+        width: 1000px;
+        height: 300px;
+        margin-top: 150px;
+    }
+    .hoodies{
+        margin-top: -300px;
+        font-size: 45px;
+    }
+    .talles{
+        background-color: #e4ded0;
+    }
+    .btn-primary{
+        background-image: linear-gradient(to right, #446e8f, #34546d, #2e4c63);
+        border: none;
+    }
+}

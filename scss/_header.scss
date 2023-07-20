@@ -1,0 +1,49 @@
+/*Header*/
+header{
+    .fondoindex{
+        height: 800px;
+        background-image: url(../img/2023-07-01.png);
+        background-size: cover;
+        grid-area: header;
+        background-color: $primary-color;
+    }
+    @media (max-width: 600px){
+        .fondoindex{
+            background-color: $primary-color;
+            background-image: none;
+        }
+    }
+    .navbar{
+        padding: 0%;
+    }    
+    .container-fluid{
+        text-align: center;
+        display: flex;
+        background-color: $primary-color;
+        margin: 0%;
+    }
+    .navbar-brand{
+        display: flex;
+        color: #3E6583;
+        margin: 0%;
+        font-size: 25px;
+    }
+    .nav-link{
+        border: none;
+        font-size: 18px;
+        margin-left: 10px;
+        color: #323232;
+        &:hover{
+            transform: scale(1.07);
+            cursor: pointer;
+        }
+    }
+    .btn-outline-success{
+        color: black;
+        background-color:#D3DBD9;
+        border: none;
+        &:hover{
+            background-color: #3E6583;
+        }
+    }
+}
