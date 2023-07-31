@@ -160,14 +160,14 @@ p{
             margin-left: -15px;
         }
     }
-    // $redes-sociales :(
-    //     facebook: black,
-    //     instagram: black,
-    //     whatsapp: black,
-    // );
-    // @each $red-social, $color in $redes-sociales{
-    //     ##{$red-social}{
-    //         background-color: $color;
-    //     }
-    // }
+    $redes-sociales :(
+        facebook: #F4F8E6,
+        instagram: #F4F8E6,
+        whatsapp: #F4F8E6,
+        );
+        @each $red-social, $color in $redes-sociales{
+            ##{$red-social}{
+                background-color: $color;
+        }
+    }
 }

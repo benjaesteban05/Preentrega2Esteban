@@ -84,10 +84,13 @@ main{
     .mb-3{
         margin-top: 50px;
     }
+    @mixin sizes($margintop, $ancho, $alto){
+        margin-top: $margintop;
+        width: $ancho;
+        height: $alto;
+    }
     .cajaforminicio{
-        margin-top: 150px;
-        width: 500px;
-        height: 450px;
+        @include sizes(150px, 500px, 450px)
     }
     .cajaform{
         margin-top: 150px;
@@ -102,18 +105,14 @@ main{
     }
     
     .cajaformcontacto{
-        margin-top: 150px;
-        width: 500px;
-        height: 650px;
+        @include sizes(150px, 500px, 650px)
     }
     /* Guia de talles */
     .guiadetalles{
         @extend .inicioh4
     }
     .table{
-        width: 1000px;
-        height: 300px;
-        margin-top: 150px;
+        @include sizes(150px,1000px ,300px)
     }
     .hoodies{
         margin-top: -300px;
