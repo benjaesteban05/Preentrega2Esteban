@@ -89,23 +89,13 @@ main section {
   display: flex;
   grid-template-rows: repeat(4, 600px);
   grid-template-columns: repeat(4, 600px);
-  column-gap: -100px;
+  -moz-column-gap: -100px;
+       column-gap: -100px;
   row-gap: 50px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 100px;
-}
-main section table {
-  padding: 25px;
-}
-@media (max-width: 600px) {
-  main section .hoodies {
-    font-size: 40px;
-    margin-top: 100px;
-    margin-bottom: -125px;
-    margin-right: 300px;
-  }
 }
 main section div {
   background-color: #D3DBD9;
@@ -373,6 +363,4 @@ footer #instagram {
 }
 footer #whatsapp {
   background-color: #F4F8E6;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

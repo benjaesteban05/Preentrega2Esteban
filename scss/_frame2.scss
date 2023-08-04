@@ -20,7 +20,7 @@ main{
             font-weight: 600;
             font-family: "Noto serif", serif;
         }
-    }
+        }
     section{
         display: flex;
         grid-template-rows: repeat(4, 600px);
@@ -31,6 +31,17 @@ main{
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 100px;
+        table{
+            padding: 25px;
+        }
+        .hoodies{
+            @media (max-width: 600px){
+                font-size: 40px;
+                margin-top: 100px;
+                margin-bottom: -125px;
+                margin-right: 300px;
+            }
+        }
         div{
             background-color: #D3DBD9;
             width: 400px; 
@@ -39,6 +50,15 @@ main{
             border-radius: 8px;
             border: 5px solid #e3e4d5;
             margin: 75px;
+            img{
+                display: flex; 
+                margin-top: 0px; 
+                width: 350px; 
+                height: 390px; 
+                padding: 20px; 
+                box-sizing: border-box; 
+                border-radius: 8px;
+            }
             h5{
                 font-weight: 600;
             }
