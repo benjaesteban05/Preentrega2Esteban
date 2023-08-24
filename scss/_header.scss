@@ -1,11 +1,14 @@
 /*Header*/
 header{
+    // Fondo y barra de navegacion //
     .fondoindex{
         height: 800px;
-        background-image: url(../img/2023-07-01.png);
         background-size: cover;
         grid-area: header;
         background-color: $primary-color;
+        @media (min-width: 1100px){
+            background-image: url(../img/2023-07-01.png);
+        }
     }
     @media (max-width: 600px){
         .fondoindex{

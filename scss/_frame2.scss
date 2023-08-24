@@ -21,35 +21,64 @@ main{
             font-family: "Noto serif", serif;
         }
         }
+        // Sección productos //
     section{
         display: flex;
-        grid-template-rows: repeat(4, 600px);
-        grid-template-columns: repeat(4, 600px);
         column-gap: -100px;
         row-gap: 50px;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 100px;
-        table{
-            padding: 25px;
+        margin-top: 50px;
+        .produc{
+            font-weight: 600;
+            margin-bottom: 100px;
+            font-size: 50px;
         }
-        .hoodies{
-            @media (max-width: 600px){
-                font-size: 40px;
-                margin-top: 100px;
-                margin-bottom: -125px;
-                margin-right: 300px;
+        .product-box {
+            border: 5px solid #ccc;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #D3DBD9;
+        }
+        
+        @media (max-width: 600px){
+            .product-box{
+                border: 5px solid #ccc;
+                text-align: center;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                background-color: #D3DBD9;
             }
         }
-        div{
-            background-color: #D3DBD9;
-            width: 400px; 
-            height: 400px;
-            box-sizing: border-box; 
-            border-radius: 8px;
-            border: 5px solid #e3e4d5;
-            margin: 75px;
+        .col-md-2{
+            display: flex;
+            margin: 15px;
+            width: 350px;
+            @media (max-width:450px){
+                margin-left: 33px;
+            }
+            @media (min-width:600px){
+                margin-left: 45px;
+            }
+        }
+        .buzos-1{
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .product-box img {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .product-price {
+            font-size: 25px;
+            color: black;
+        }
+        table{
+            padding: 25px;
+        }   
             img{
                 display: flex; 
                 margin-top: 0px; 
@@ -59,35 +88,8 @@ main{
                 box-sizing: border-box; 
                 border-radius: 8px;
             }
-            h5{
-                font-weight: 600;
-            }
-        } 
-    .precios{
-        display: flex;
-        background-color: #D3DBD9;
-        width: 200px; 
-        height: 100px;
-        box-sizing: border-box; 
-        border-radius: 8px;
-        border: 5px solid #e3e4d5;
-        margin-top: 35px;
-        justify-content: center;
-        margin-left: 100px;
-        font-size: 20px;
-        font-weight: 600;
-        align-items: center;
-        }
-        
-    .numero{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 900;
-        font-size: 20px;
-        margin-top: -50px;
-        }
     }
+    // Formularios, inicio de sesion, crear cuenta, contacto//
     form{
         background-color: #D3DBD9;
         border-radius: 8px;
@@ -111,38 +113,113 @@ main{
     }
     .cajaforminicio{
         @include sizes(150px, 500px, 450px)
-    }
+        
+        }
+        @media(max-width:600px){
+            .cajaforminicio{
+                @include sizes(150px, 400px, 450px)
+            }
+        }
     .cajaform{
         margin-top: 150px;
         width: 500px;
-        height: 750px;
+        height: 770px;
+        @media (max-width: 600px){
+            @include sizes(150px,400px ,770px)
+        }
     }
     .mensaje{
         width: 467px;
         border-radius: 7px;
         border: none;
         margin-bottom: 30px;
+        @media (max-width:600px){
+            width: 365px;
+        }
     }
     
     .cajaformcontacto{
         @include sizes(150px, 500px, 650px)
     }
+    @media (max-width:600px){
+        .cajaformcontacto{
+            @include sizes(150px, 400px, 650px)
+        }
+    }
+    
     /* Guia de talles */
-    .guiadetalles{
-        @extend .inicioh4
+    .tx-guia{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        font-weight: 600;
+        font-size: 55px;
+        @media (max-width:600px){
+            margin-top: -300px;
+            font-size: 50px;
+        }
     }
     .table{
-        @include sizes(150px,1000px ,300px)
+        margin-left: 150px;
+        width: 1000px;
+        height: 250px;
+        @media (max-width:600px){
+            width: 350px;
+            margin-left: 50px;
+            height: 50px;
+        }
     }
-    .hoodies{
-        margin-top: -300px;
-        font-size: 45px;
+    .row-table{
+        @media(max-width: 600px){
+            padding: 5px;
+        }
     }
-    .talles{
-        background-color: #e4ded0;
+    .tabla-talles{
+        border-top-left-radius: 10px;
+    }
+    .tabla-tallesr{
+        border-top-right-radius: 10px;
+    }
+    .tabla-talles1{
+        border-bottom-left-radius: 10px;
+        border: none;
+    }
+    .tabla-talles1r{
+        border-bottom-right-radius: 10px;
+        border: none;
+    }
+    .hoodie{
+        margin-top: 300px;
+        font-size: 35px;
+        margin-left: 150px;
+        @media (max-width:600px){
+        margin-left: 50px;
+        }
+    }
+    .remeras{
+        font-size: 35px;
+        @media (min-width: 600px){
+        margin-left: 150px;
+        }
+        @media (max-width:600px){
+            margin-left: 50px;
+            }
     }
     .btn-primary{
         background-image: linear-gradient(to right, #446e8f, #34546d, #2e4c63);
         border: none;
+    }
+    .cuentanueva-iniciar{
+        display: flex;
+        white-space: nowrap;
+    }
+    .crear-iniciar{
+        text-decoration: underline;
+        font-weight: 600;
+        &:hover{
+            color: black;
+        }
     }
 }

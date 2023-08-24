@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endless Argentina|inicio de sesion|</title>
-    <meta name="descripcion" content="Endless es una marca de ropa que combina la moda contemporanea con la comodidad y el estilo de vida activo. Nuestro compromiso es ofrecer prendas de alta calidad que te permitan expresar tu individualidad y disfrutar de la vida al maximo. Vestite con estilo sin limites.">
+    <meta name="¿Quienes somos?" content="Endless es una marca de ropa que combina la moda contemporanea con la comodidad y el estilo de vida activo. Nuestro compromiso es ofrecer prendas de alta calidad que te permitan expresar tu individualidad y disfrutar de la vida al maximo. Vestite con estilo sin limites.">
     <meta name="keywords" content="Ropa, Remeras, Buzos, Hoodies">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
         <div class="fondocolor">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html">Endless</a>
+                    <a class="navbar-brand animate__animated animate__fadeIn" href="../index.html">Endless</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,10 +76,13 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Iniciar sesion</button>
                 <div class="dropdown-divider"></a></div>
-                <a class="dropdown-item" href="./crearcuenta.html">No tenes cuenta? crear cuenta</a>
+                <p class="mt-4 cuentanueva-iniciar">No tenes cuenta?
+                    <a class="dropdown-item crear-iniciar" href="./crearcuenta.html">Crear cuenta</a>
+                </p>
             </div>
         </form>
     </main>
+    <!--Footer-->
     <footer class="pie" id="pie">
         <div class="separadorframe3"></div>
             
@@ -87,36 +90,61 @@
             <h1 class="sobrenos">Endless</h1>
                 <p class="infosobrenos">Endless es una marca de ropa que combina la moda contemporanea con la comodidad y el estilo de vida activo. Nuestro compromiso es ofrecer prendas de alta calidad que te permitan expresar tu individualidad y disfrutar de la vida al maximo. Vestite con estilo sin limites.</p>
             </div>
-            <div class="cajafooter">
-                <div class="envio">
-                <img src="../img/iconos/bxs-truck.svg" alt="Envío" style="margin-top: 250px; margin-right: 195px;" class="envioimg">
-                <p style="margin-left: 140px;">Envios a todo el país</p>
-                </div>
-                <div class="pagos">
-                <img src="../img/iconos/bx-credit-card.svg" alt="Pago" style="margin-top: 250px;" class="pago">
-                <p style="margin-left: 75px;" class="mediosdepago">Todos los metodos de pago</p>
-                </div>
-    
-                <div class="redes-sociales" style=" margin-top: 150px; margin-left: 500px; width: 200px; height: 100px;">
-                <h3 class="redes" >Redes Sociales</h3>
-                    <divi class="imgredes">
-                        <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank">
-                        <img src="../img/iconos/bxl-instagram.svg" alt="Instagram" class="imgredes" id="instagram">
-                        </a>
-                        <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank">
-                        <img src="../img/iconos/bxl-facebook.svg" alt="Facebook" class="imgredes" id="facebook">
-                        </a>
-                        <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
-                        <img src="../img/iconos/bxl-whatsapp.svg" alt="WhatsApp" class="imgredes" id="whatsapp">
-                        </a>
+            <div class="footer">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="footer-box">
+                        <img src="../img/iconos/bx-credit-card.svg" alt="Métodos de Pago" class="animate__animated animate__infinite animate__tada">
+                        <h2 class="info-footer">Todos los metodos de pago</h2>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                    <div class="footer-box">
+                        <img src="../img/iconos/bxs-truck.svg" alt="Métodos de Envío">
+                        <h2 class="info-footer">Envíos a todo el país</h2>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                    <div class="footer-box">
+                        <img src="../img/iconos/bxs-discount.svg" alt="Descuentos" class="animate__animated animate__infinite animate__tada"">
+                        <h2 class="info-footer">10%OFF en efectivo y transferencia</h2>
+                    </div>
                     </div>
                 </div>
+                </div>
             </div>
-            <div class="links-grid">
-                <a href="../index.html">Inicio</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="../index.html">Productos</a>
-        </div>
+            <div class="footerredes">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-1 cajaredes">
+                    <div class="social-box">
+                        <a href=""><img src="../img/iconos/bxl-whatsapp.svg" alt="WhatsApp" class="social-image"></a>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-1 cajaredes">
+                    <div class="social-box">
+                        <a href=""><img src="../img/iconos/bxl-facebook.svg" alt="facebook" class="social-image"></a>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-1 cajaredes">
+                    <div class="social-box">
+                        <a href=""><img src="../img/iconos/bxl-instagram.svg" alt="Instagram" class="social-image"></a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="caja-links">
+                <a href="./contacto.html" class="links-footer">Contacto</a>
+                <a href="../index.html" class="links-footer">Inicio</a>
+                <a href="../index.html" class="links-footer">Productos</a>
+                <a href="guiadetalles.html" class="links-footer">Guia de talles</a>
+            </div>
         <div class="caja-redesycopy">
             <div class="content">
                 <div class="copy">
